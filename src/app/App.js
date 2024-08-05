@@ -33,9 +33,6 @@ export default function App() {
       <button onClick={handleSearch} className="button">
         Ara
       </button>
-      {users.length === 0 && query && (
-        <p className="error">Kullanıcı bulunamadı</p>
-      )}
       <h2>Results</h2>
       <div className="results">
         {users.map((user) => (
